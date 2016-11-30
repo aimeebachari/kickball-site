@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @name %></title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h1>
+      <%= @name %>
+    </h1>
+
+    <ul>
+      <% @roster.each do |position, player| %>
+        <li><%= position %> - <%= player %>
+      </li>
+      <% end %>
+    </ul>
+
+    <a href="/teams">All teams</a>
+  </body>
+</html>
